@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// 백준, 그리디 - 잃어버린 괄호
 public class GreedyEx06 {
 
     public static void main(String[]args) throws IOException {
