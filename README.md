@@ -1,3 +1,3 @@
-# Algorithm_java
-# 자바의 정석
+## 알고리즘 with JAVA
+## 자바의 정석
 
