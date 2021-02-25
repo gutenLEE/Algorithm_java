@@ -24,7 +24,7 @@ public class DfsEx02 {
         }
 
         dfsArr(vertex, adjArr, visited);
-
+        dfsStack(vertex, adjArr, visited, true);
     }
     public static void dfsArr(int vertex, int[][] adjArr, boolean[] visited){
         int i = adjArr.length - 1;
