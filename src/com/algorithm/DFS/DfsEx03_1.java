@@ -3,6 +3,8 @@ package com.algorithm.DFS;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -28,15 +30,38 @@ public class DfsEx03_1 {
         }
 
         dfsArr(start, map, visited);
+        System.out.println("");
+        bfs(start,map, new boolean[nodes + 1]);
 
     }
     public static void dfsArr(int start, int[][] map, boolean[] visit){
+
         visit[start] = true;
         System.out.print(start + " ");
 
         for (int i = 0; i < map.length; i++) {
             if(map[start][i] == 1 && !visit[i]){
                 dfsArr(i, map, visit);
+            }
+        }
+
+    }
+
+    public static void bfs(int start, int[][] map, boolean[] visit){
+        Queue<Integer> que = new LinkedList<Integer>();
+        que.add(start);
+        visit[start] = true;
+        System.out.print(start + " ");
+
+        while (!que.isEmpty()){
+            int temp = que.peek();
+            que.poll();
+            for (int i = 0; i < map.length; i++) {
+                if(map[temp][i] == 1 && visit[i] == false){
+                    que.add(i);
+                    visit[i] = true;
+                    System.out.print(i + " ");
+                }
             }
         }
 
