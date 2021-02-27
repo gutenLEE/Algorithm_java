@@ -46,7 +46,7 @@ public class DfsEX04 {
     }
     // 탐색 메서드
     public static boolean dfs(int r, int c){
-        // 매개변수 유효성 검사
+        // 매개변수 유효성 검사 - map 크기에 벗어나는 입력값이면 탐색 수행하지 않는다.
         if(r <= -1 || r >= row || c <= -1 || c >= col){
             return false;
         }
