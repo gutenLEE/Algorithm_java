@@ -12,6 +12,7 @@ public class DfsEx06 {
 
     static LinkedList<Integer>[] adjList;
     static boolean[] visit;
+    static int call = 0;
 
     public static void main(String[] args) throws IOException {
 
@@ -36,18 +37,20 @@ public class DfsEx06 {
         }
 
         dfs(1);
+        System.out.println(call - 1);
     }
 
     public static void dfs(int start){
-
+        // 노드 방문
         visit[start] = true;
-        Iterator<Integer> iterator = adjList[start].listIterator();
+        call++;
 
-        while (iterator.hasNext()){
-            int next = iterator.next();
-            if(visit[next] != true)
-                System.out.println(next);
-                dfs(next);
+        Iterator<Integer> iter = adjList[start].listIterator();
+        while (iter.hasNext()){
+            int w = iter.next();
+            if(!visit[w])
+                dfs(w);
         }
+
     }
 }
