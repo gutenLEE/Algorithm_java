@@ -48,8 +48,11 @@ public class DfsEx06 {
         Iterator<Integer> iter = adjList[start].listIterator();
         while (iter.hasNext()){
             int w = iter.next();
-            if(!visit[w])
+            if(!visit[w]){
+                System.out.println(w);
                 dfs(w);
+            }
+
         }
 
     }
