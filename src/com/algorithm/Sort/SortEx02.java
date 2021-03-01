@@ -14,6 +14,8 @@ public class SortEx02 {
                     arr[j - 1] = arr[j];
                     arr[j] = tmp;
                 }
+                else
+                    break;
             }
         }
 
