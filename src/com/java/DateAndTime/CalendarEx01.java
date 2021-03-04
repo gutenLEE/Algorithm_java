@@ -27,5 +27,12 @@ public class CalendarEx01 {
 
         Calendar today = Calendar.getInstance();
         System.out.println(today.get(Calendar.YEAR));
+
+        String tmp = "";
+        for (int i = 0; i < TIME_UNIT.length; i++) {
+            tmp += difference/TIME_UNIT[i] + TIME_UNIT_NAME[i];
+            difference %= TIME_UNIT[i];
+        }
+        System.out.println(tmp);
     }
 }
