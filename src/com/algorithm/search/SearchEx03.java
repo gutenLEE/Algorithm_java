@@ -7,7 +7,6 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class SearchEx03 {
-    static int result = 0;
     static int m = 0;
     public static void main(String[] args) throws IOException {
 
@@ -23,30 +22,29 @@ public class SearchEx03 {
             sticks[i] = Integer.parseInt(st.nextToken());
         }
         Arrays.sort(sticks);
-        int res = binarySearch(sticks[0], sticks[sticks.length - 1], sticks);
+        int res = binarySearch(0, sticks[sticks.length - 1], sticks);
 
         if(res != -1)
             System.out.println(res);
 
     }
     private static int binarySearch(int min, int max, int[] arr){
+        int result = 0;
         int mid = (min + max) / 2;
 
-        if(min < max)
-            return -1;
-
         for (int i = 0; i < arr.length; i++) {
-            if(arr[i] - mid > 0)
+            if(arr[i] > mid)
                 result += arr[i] - mid;
         }
 
         if(result == m)
             return mid;
-        else if(result > m)
-            return binarySearch(mid, max, arr);
-        else if(result < m)
-            return binarySearch(min, mid, arr);
-
+        else if(result > m){
+            return binarySearch(mid + 1, max, arr);
+        }
+        else if(result < m) {
+            return binarySearch(min, mid - 1, arr);
+        }
         return -1;
     }
 }
