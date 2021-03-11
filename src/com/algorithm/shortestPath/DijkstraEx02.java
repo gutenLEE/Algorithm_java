@@ -23,7 +23,8 @@ public class DijkstraEx02 {
         st = new StringTokenizer(br.readLine());
         n = Integer.parseInt(st.nextToken()); //노드
         m = Integer.parseInt(st.nextToken()); //간선
-        int start = Integer.parseInt(st.nextToken()); //시작 노드
+
+        int start = Integer.parseInt(br.readLine());
 
         distance = new int[n + 1];
         graph = new ArrayList[n + 1];
@@ -34,12 +35,15 @@ public class DijkstraEx02 {
         }
 
         for (int i = 0; i < m; i++) {
+            System.out.println("n " + n + " m " + m);
             st = new StringTokenizer(br.readLine());
 
             int begin = Integer.parseInt(st.nextToken());
             int end = Integer.parseInt(st.nextToken());
+            int dis = Integer.parseInt(st.nextToken());
 
-            graph[begin].add(new Node(end, Integer.parseInt(st.nextToken())));
+            graph[begin].add(new Node(end, dis));
+
         }
 
         dijkstraQueue(start);
@@ -54,30 +58,22 @@ public class DijkstraEx02 {
         while (!pq.isEmpty()){
 
             Node curr = pq.poll();
-            int currNode = curr.end;
-            int currDist = curr.distance;
 
-            if(distance[currNode] < currDist){
+            int node = curr.end;
+            int dist = curr.distance;
+
+            if(distance[node] < dist){
                 continue;
             }
-            int adjSize = graph[currNode].size();
-            ArrayList<Node> node = graph[currNode];
-            for (int i = 0; i < adjSize; i++) {
 
-                int dist = node.get(i).distance;
-                int now = node.get(i).end;
+            for (Node next : graph[node]) {
 
-                if(distance[now] < dist){
-                    continue;
-                }
+                int nextNode = next.end;
+                int nDist = next.distance;
 
-                for (Node next : graph[now]) {
-                    int cost = dist + next.distance;
-
-                    if(cost < distance[next.end]){
-                        distance[next.end] = cost;
-                        pq.offer(new Node(cost, next.end));
-                    }
+                if(distance[nextNode] > distance[node] + nDist){
+                    distance[nextNode] = distance[node] + nDist;
+                    pq.offer(new Node(nextNode, dist));
                 }
             }
         }
@@ -95,6 +91,10 @@ public class DijkstraEx02 {
         @Override
         public int compareTo(Node o) {
             return Integer.compare(this.distance, o.distance);
+        }
+
+        public String toString() {
+            return "end " + end + " : distance " + distance;
         }
     }
 
