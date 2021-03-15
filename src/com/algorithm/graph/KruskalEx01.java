@@ -98,5 +98,4 @@ class Edge implements Comparable<Edge>{
     public int compareTo(Edge o) {
         return Integer.compare(this.weight,  o.weight);
     }
-
 }
