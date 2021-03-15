@@ -11,7 +11,7 @@ public class DisjointSetEx01 {
         /**
          * 노드의 개수 - n
          * 간선의 개수 = edge
-         * 테이블 - tree
+         * 테이블 - parent
          */
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
