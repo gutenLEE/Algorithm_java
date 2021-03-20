@@ -13,17 +13,12 @@ class GoormEx05 {
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         ArrayList list = new ArrayList();
+
         for(int i = 0; i < num; i++){
 
             int n = Integer.parseInt(st.nextToken());
-
-            while(n != 2){
-
-                if (n % 2 != 0){
-                    list.add(i);
-                    break;
-                }
-                n = n / 2;
+            if((n & (n - 1)) != 0){
+                list.add(i);
             }
         }
         // output
@@ -31,9 +26,7 @@ class GoormEx05 {
             System.out.println(0);
         }
         else{
-
-            System.out.println("size : " + list.size());
-
+            System.out.println(list.size());
             Iterator iter = list.iterator();
             while (iter.hasNext()) {
                 System.out.print(((int)iter.next() + 1) + " ");
