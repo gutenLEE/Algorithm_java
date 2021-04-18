@@ -13,7 +13,7 @@ class Outer {
         int val = 20; // this.val
 
         void method(int i) {
-            
+
             int val = 30;
 
             // i = 10 -> 에러. 상수의 값을 변경할 수 없다.
