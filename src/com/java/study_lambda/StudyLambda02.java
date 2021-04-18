@@ -17,7 +17,7 @@ public class StudyLambda02 {
                 return a > b ? a : b;
             }
         };
-        // 람다식으로 
+        // 람다식으로
 
         MyFunction f2 = (int a, int b) -> a > b ? a : b;
 
