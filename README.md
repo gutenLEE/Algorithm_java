@@ -1,33 +1,14 @@
 ## 알고리즘 with JAVA 와 도서 [자바의 정석] 
 
 ```
-
-                                                                                                                                                                          
-                                                                                                                                                                          
-               AAA               lllllll                                                           iiii          tttt         hhhhhhh                                     
-              A:::A              l:::::l                                                          i::::i      ttt:::t         h:::::h                                     
-             A:::::A             l:::::l                                                           iiii       t:::::t         h:::::h                                     
-            A:::::::A            l:::::l                                                                      t:::::t         h:::::h                                     
-           A:::::::::A            l::::l    ggggggggg   ggggg   ooooooooooo   rrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt    h::::h hhhhh          mmmmmmm    mmmmmmm   
-          A:::::A:::::A           l::::l   g:::::::::ggg::::g oo:::::::::::oo r::::rrr:::::::::r i:::::it:::::::::::::::::t    h::::hh:::::hhh     mm:::::::m  m:::::::mm 
-         A:::::A A:::::A          l::::l  g:::::::::::::::::go:::::::::::::::or:::::::::::::::::r i::::it:::::::::::::::::t    h::::::::::::::hh  m::::::::::mm::::::::::m
-        A:::::A   A:::::A         l::::l g::::::ggggg::::::ggo:::::ooooo:::::orr::::::rrrrr::::::ri::::itttttt:::::::tttttt    h:::::::hhh::::::h m::::::::::::::::::::::m
-       A:::::A     A:::::A        l::::l g:::::g     g:::::g o::::o     o::::o r:::::r     r:::::ri::::i      t:::::t          h::::::h   h::::::hm:::::mmm::::::mmm:::::m
-      A:::::AAAAAAAAA:::::A       l::::l g:::::g     g:::::g o::::o     o::::o r:::::r     rrrrrrri::::i      t:::::t          h:::::h     h:::::hm::::m   m::::m   m::::m
-     A:::::::::::::::::::::A      l::::l g:::::g     g:::::g o::::o     o::::o r:::::r            i::::i      t:::::t          h:::::h     h:::::hm::::m   m::::m   m::::m
-    A:::::AAAAAAAAAAAAA:::::A     l::::l g::::::g    g:::::g o::::o     o::::o r:::::r            i::::i      t:::::t    tttttth:::::h     h:::::hm::::m   m::::m   m::::m
-   A:::::A             A:::::A   l::::::lg:::::::ggggg:::::g o:::::ooooo:::::o r:::::r           i::::::i     t::::::tttt:::::th:::::h     h:::::hm::::m   m::::m   m::::m
-  A:::::A               A:::::A  l::::::l g::::::::::::::::g o:::::::::::::::o r:::::r           i::::::i     tt::::::::::::::th:::::h     h:::::hm::::m   m::::m   m::::m
- A:::::A                 A:::::A l::::::l  gg::::::::::::::g  oo:::::::::::oo  r:::::r           i::::::i       tt:::::::::::tth:::::h     h:::::hm::::m   m::::m   m::::m
-AAAAAAA                   AAAAAAAllllllll    gggggggg::::::g    ooooooooooo    rrrrrrr           iiiiiiii         ttttttttttt  hhhhhhh     hhhhhhhmmmmmm   mmmmmm   mmmmmm
-                                                     g:::::g                                                                                                              
-                                         gggggg      g:::::g                                                                                                              
-                                         g:::::gg   gg:::::g                                                                                                              
-                                          g::::::ggg:::::::g                                                                                                              
-                                           gg:::::::::::::g                                                                                                               
-                                             ggg::::::ggg                                                                                                                 
-                                                gggggg                                                                                                                    
-
+  ___  _                  _ _   _               
+ / _ \| |                (_) | | |              
+/ /_\ \ | __ _  ___  _ __ _| |_| |__  _ __ ___  
+|  _  | |/ _` |/ _ \| '__| | __| '_ \| '_ ` _ \ 
+| | | | | (_| | (_) | |  | | |_| | | | | | | | |
+\_| |_/_|\__, |\___/|_|  |_|\__|_| |_|_| |_| |_|
+          __/ |                                 
+         |___/                                  
 ```
 
 람다식
