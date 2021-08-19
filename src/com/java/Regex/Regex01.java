@@ -1,4 +1,4 @@
-package com.algorithm.regex;
+package com.java.Regex;
 
 import java.util.regex.Pattern;
 
@@ -11,7 +11,7 @@ public class Regex01 {
 
         String pattern = "(고졸|대졸|석사|박사|학력무관)?\\s?~?\\s?(고졸|대졸|석사|박사|학력무관)?(\\(\\d*~?\\d*년\\))?";
 
-        String[] arr = {"석사", "박사", "고졸", "학력무관", "고졸 ~ 석사(4년)", "고졸(3년)"};
+        String[] arr = {"석사", "박사", "고졸", "학력무관", "고졸 ~ 석사(4년)", "고졸(3년)", "4년"};
 
         for (int i = 0; i < arr.length; i++) {
             String val = arr[i];
